@@ -1,2 +1,2 @@
 # ImThunderbioink.github.io
-Hello World! This is my Portfolio! I am pleased to share with the world my work, passions, and future goals in tech. I look forward to further developing my skills and knowledge to become a professional that can have a positive influence wherever I go.
+Hello World! My GitHub name is Thunderbioink, but in real life, my name is Alma Camarillo. When I am not coding or updating my tech database, I can be found composing my own music, learning a new language, or enjoying time learning new songs on my guitar. Welcome to my Portfolio! I am pleased to share with the world my work, passions, and future goals in tech. I look forward to further developing my skills and knowledge to become a professional who can have a positive influence wherever I go.
