@@ -1,3 +1,6 @@
+/* Define custom fonts */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Noto%20Sans%20Georgian:400');
+
 @media (prefers-color-scheme: light) {
     :root {
       --text-50: #f2f2f2;
@@ -125,30 +128,309 @@
       --accent-950: #e9fbe9;
   
     }
-  }
-
-@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Noto%20Sans%20Georgian:400');
-
+  } 
+/* Apply styles */
 body {
-  font-family: 'Noto Sans Georgian';
-  font-weight: 400;
+    font-family: 'Noto Sans Georgian';
+    font-weight: 400;
+    background-color: #010819; /* Set background color to black */
+    color: white; /* Set font color to white */
+    margin: 0; /* Remove default margin */
+    text-align: justify;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Quicksand';
-  font-weight: 700;
+header {
+    background-color: black; /* Set header background color to black */
+    color: white; /* Set header font color to white */
+    position: fixed; /* Make header static */
+    width: 97%; /* Set header width to 100% */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space navigation links evenly */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding */
+    border-bottom: 2px solid black; /* Add white line at the bottom */
+    border-left: 2px solid black; /* Add white line at the bottom */
+    border-right: 2px solid black; /* Add white line at the bottom */
+    border-top: 2px solid black; /* Add border radius for smooth/rounded corners */
+    z-index: 1; /* Ensure header is on top of other content */
+    border-radius: 5px;
 }
 
-html {font-size: 100%;} /* 16px */
+footer {
+    background-color: black; /* Set header background color to black */
+    color: white; /* Set header font color to white */
+    position: fixed; /* Make header static */
+    width: 97%; /* Set header width to 100% */
+    
+    padding: 10px 20px; /* Add padding */
+    border-bottom: 35px solid black; /* Add white line at the bottom */
+    border-left: 2px solid black; /* Add white line at the bottom */
+    border-right: 2px solid black; /* Add white line at the bottom */
+    border-top: 2px solid black; /* Add border radius for smooth/rounded corners */
+    z-index: 1; /* Ensure header is on top of other content */
+    border-radius: 5px;
+    text-align: center;
 
-h1 {font-size: 4.210rem; /* 67.36px */}
+}
 
-h2 {font-size: 3.158rem; /* 50.56px */}
+header a {
+    margin-right: 20px; /* Add space between navigation links */
+    color: white; /* Set navigation link color to white */
+    text-decoration: none; /* Remove underline */
+}
 
-h3 {font-size: 2.369rem; /* 37.92px */}
+header a:hover {
+    color: #53df53; /* Change font color on hover */
+    transition: transform 0.2s; /* Animation duration */
+    transform: scale(1.1); /* Zoom out to 80% of original size */
+}
 
-h4 {font-size: 1.777rem; /* 28.48px */}
+.container {
+    padding-top: 100px; /* Add padding to top of container to prevent overlap with fixed header */
+    width: 80%; /* Set container width to match header width */
+    margin: auto; /* Center container horizontally */
+    padding-bottom: 80px; /* Add padding to top of container to prevent overlap with fixed header */
+}
 
-h5 {font-size: 1.333rem; /* 21.28px */}
+#page-logo {
+    color: white; /* Set navigation link color to white */
+}
 
-small {font-size: 0.750rem; /* 12px */}
+/* Additional styling for smaller heading sizes */
+h1 { font-size: 4.210rem; }
+h2 { font-size: 3.158rem; }
+h3 { font-size: 2.369rem; }
+h4 { font-size: 1.777rem; }
+h5 { font-size: 1.333rem; }
+small { font-size: 0.750rem; }
+
+/* Media query for adjusting navigation bar */
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column; /* Stack navigation links vertically */
+        padding: 10px; /* Adjust padding */
+    }
+
+    header a {
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .container {
+        width: 100%; /* Set container width to full width on smaller screens */
+        padding-top: 60px; /* Adjust padding to prevent overlap with fixed header */
+    }
+
+    .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .column-left,
+    .column-right {
+        border: none; /* Remove border between columns */
+        padding: 0; /* Remove padding */
+    }
+
+    .column-left a,
+    .column-right a {
+        margin-bottom: 5px; /* Adjust space between links */
+    }
+}
+
+.background-site {
+    background-color: #010819;
+}
+
+/* Additional styling for smaller heading sizes */
+.column-left,
+.column-right {
+    flex: 1; /* Equal width for both columns */
+    padding: 0 10px; /* Adjust padding */
+}
+
+.row {
+    display: flex; /* Use flexbox for layout */
+}
+
+/* .column-left {
+    border-right: 1px solid white;} /* Add border between columns */
+
+
+.column-left a,
+.column-right a {
+    display: block; /* Make links full width */
+    margin-bottom: 10px; /* Add space between links */
+}
+
+/* Media query for adjusting navigation bar */
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column; /* Stack navigation links vertically */
+        padding: 10px; /* Adjust padding */
+    }
+
+    header a {
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .container {
+        width: 100%; /* Set container width to full width on smaller screens */
+        padding-top: 60px; /* Adjust padding to prevent overlap with fixed header */
+    }
+
+    .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .column-left,
+    .column-right {
+        border: none; /* Remove border between columns */
+        padding: 0; /* Remove padding */
+    }
+
+    .column-left a,
+    .column-right a {
+        margin-bottom: 10px; /* Adjust space between links */
+    }
+}
+
+.images-right-text{
+
+    float: right; /* Align the image to the right */
+    margin-left: 10px; /* Add some space between the text and the image */
+    margin-top: 20px;
+    border-radius: 35px;
+    margin-bottom: 5px;
+}
+
+/* Add the following CSS to style the button groups */
+.button-group {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space buttons evenly */
+    margin-bottom: 10px; /* Add margin between button groups */
+    text-decoration: none; /* Remove underline */
+
+}
+
+/* Add the following CSS to style the buttons */
+.button {
+    /* background-color: #b905fa; Set button background color */
+    color: white; /* Set button text color */
+    padding: 20px; /* Add padding */
+    margin: 5px; /* Add margin */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Add transition effect */
+    border-radius: 5px; /* Add border radius */
+    text-decoration: none; /* Remove underline */
+
+    
+}
+
+/* Add hover effect */
+.button:hover {
+    /* background-color: #9404c8; Change background color on hover */
+    transform: scale(1.1); /* Scale button on hover */
+    text-decoration: none; /* Remove underline */
+
+}
+
+/* Add different sizes for each button */
+#button1 { 
+    width: 60%;
+    background-color: #3973f9;
+    text-decoration: none; /* Remove underline */
+
+    
+}
+#button2 {
+    
+    width: 40%;
+    background-color: #9404c8;
+    text-decoration: none; /* Remove underline */
+
+
+}
+#button3 { 
+    
+    width: 25%;
+    background-color: #4a0264;
+    text-decoration: none; /* Remove underline */
+
+
+}
+#button4 { 
+    
+    width: 75%;
+    background-color: #20ac20;
+    text-decoration: none; /* Remove underline */
+
+}
+#button5 { 
+    
+    width: 30%;
+    background-color: #053094;
+    text-decoration: none; /* Remove underline */
+
+}
+#button6 { 
+
+    width: 50%;
+    background-color: #082b08;
+    text-decoration: none; /* Remove underline */
+
+}
+
+#button1:hover { 
+    width: 60%;
+    background-color: #3973f9;
+    text-decoration: none; /* Remove underline */
+
+    
+}
+
+#button2:hover { 
+    
+    width: 40%;
+    background-color: #9404c8;
+    text-decoration: none; /* Remove underline */
+
+}
+
+#button3:hover { 
+    
+    width: 25%;
+    background-color: #4a0264;
+    text-decoration: none; /* Remove underline */
+
+}
+
+#button4:hover { 
+    
+    width: 75%;
+    background-color: #20ac20;
+    text-decoration: none; /* Remove underline */
+
+}
+
+#button5:hover { 
+    
+    width: 30%;
+    background-color: #053094;
+    text-decoration: none; /* Remove underline */
+
+}
+
+#button6:hover { 
+    
+    width: 50%;
+    background-color: #082b08;
+    text-decoration: none; /* Remove underline */
+
+}
+
+a{
+    text-decoration: none; /* Remove underline */
+    color:white;
+
+
+}
