@@ -163,7 +163,7 @@ footer {
     width: 97%; /* Set header width to 100% */
     bottom:0;
     padding: 10px 20px; /* Add padding */
-    border-bottom: 65px solid black; /* Add white line at the bottom */
+    border-bottom: 10px solid black; /* Add white line at the bottom */
     border-left: 2px solid black; /* Add white line at the bottom */
     border-right: 2px solid black; /* Add white line at the bottom */
     border-top: 2px solid black; /* Add border radius for smooth/rounded corners */
