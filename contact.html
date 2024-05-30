@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Document</title>
+    <title>Thunderbioink Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Contact </h1>
-        <p>This is a paragraph in Contact page</p>
-        <a href="./"><b>Navigate to Home page</b></a>
+    <div class="background-site"> 
+        <header>
+            <!--Page Title Place holder-->
+            <!-- <img class="floating-img" src="./Images/welcome-gif-astro-transparent.gif" width="3%"> -->
+            <a id="page-logo" href="./"><h5>Thunderbioink ⚡</h5></a>
+            <!--<a id="page-logo" href="./"><h5>Thunderbioink</h5></a>-->
+            <!--Navigation Links-->
+            <a href="./focus-areas.html">Focus-Areas</a>
+            <a href="./certifications.html">Certifications</a>
+            <a href="./senior-project.html">Senior Project</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </header>
+
+        <div class="container">
+            <br>    
+            <div class="contact-icons-container">    
+                <h1>Contact Space 👽</h1>
+                <p>Let's keep in touch, network, or work together.</p>
+                <p>✨For more info, click on the link located inside each icon. ✨</p>
+                <br>
+                <br>
+                <img class="contact-icons-container-deco" src="./Images/linkedin-icon-trans.png" width="5%" onclick="toggleContactInfo('linkedin')">
+                <p class="hidden" id="linkedin-info"><a href="https://www.linkedin.com/in/alma-camarillo" target="_blank">linkedin.com/in/alma-camarillo</a></p>
+                <br>
+                <br>
+                <img class="contact-icons-container-deco" src="./Images/email-icon.png" width="5%" onclick="toggleContactInfo('email')">
+                <p class="hidden" id="email-info"><a href="mailto:thunderbionk.intelligence@gmail.com" target="_blank">thunderbioink.intelligence@gmail.com</a></p>
+                <br>
+                <br>
+                <img class="contact-icons-container-deco" src="./Images/github-icon-white.jpg" width="6.5%" onclick="toggleContactInfo('github')">
+                <p class="hidden" id="github-info"><a href="https://github.com/thunderbioink/" target="_blank">GitHub: @thunderbioink</a></p>
+                <br>
+                <br>
+            </div>   
+            
+        </div>
+        <!-- Footer content goes here -->
+        <footer>
+            <p>Thunderbioink © 2024</p>
+        </footer>
     </div>
 </body>
 </html>
+<script>
+//Insert JS code to handle button show/hide elements:
+//if user clicks on image icon, display p itme underneath image
+//if user clicks image icon again and p is in display, hid p object again:
+    function toggleContactInfo(id) {
+        var info = document.getElementById(id + '-info');
+        if (info.classList.contains('hidden')) {
+            info.classList.remove('hidden');
+        } else {
+            info.classList.add('hidden');
+        }
+    }
+
+</script>

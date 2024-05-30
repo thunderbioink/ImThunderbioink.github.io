@@ -455,3 +455,41 @@ a{
 
     border-radius:5px;
 }
+
+/* CONTACT PAGE CSS */
+.contact-icons-container{
+
+
+    text-align: center;
+}
+
+.contact-icons-container-deco:hover{
+
+
+    transform: scale(1.1); /* Scale button on hover */
+}
+.hidden {
+    display: none;
+}
+
+#linkedin-info:hover {
+    /* display: none; */
+    transform: scale(1.1); /* Scale button on hover */
+
+}
+
+#email-info:hover {
+    /* display: none; */
+    transform: scale(1.1); /* Scale button on hover */
+
+}
+#github-info:hover {
+    /* display: none; */
+    transform: scale(1.1); /* Scale button on hover */
+
+}
+
+.fun-link-senior:hover{
+
+    color:#e523ce;
+}
